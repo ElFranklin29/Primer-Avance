@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightGrey: #EDF0F5;
+    --grey: #908484;
+    --red: #FF4135;
+    --black: #222222;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* table */
+
+table {
+    width: 750px;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+    background: var(--lightGrey)
+}
+
+th {
+    background: var(--grey);
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 10px;
+    border: 1px solid var(--lightGrey);
+    text-align: left;
+    font-size: 18px;
+}
+
+/*chat whatsapp*/
+
+.api{
+    font-size: 0;
+ }
+
+
+ .icon-wts {
+     width: 60px;
+     height: 60px;
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     cursor: pointer;
+ }
+
+ .icon-wts:active {
+     transform: scale(0.9);
+ }
+
+ .form-wts {
+     width: 220px;
+     height: 280px;
+     position: fixed;
+     background: white;
+     bottom: 80px;
+     right: 50px;
+     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.22);
+     border-radius: 5px;
+     padding: 10px;
+     display: none;
+ }
+
+ .entrarysalir {
+     display: block;
+
+ }
+
+ .inputwts {
+     width: 100%;
+     padding: 5px;
+     color: #666;
+     box-sizing: border-box;
+     border-radius: 5px;
+     border: 1px solid rgba(0, 0, 0, 0.19);
+ }
+
+ .inputwts:focus {
+     outline: none;
+ }
+
+ .textareawts:focus {
+     outline: none;
+ }
+
+ .textareawts {
+     width: 100%;
+     min-width: 100%;
+     min-width: 100%;
+     padding: 5px;
+     color: #666;
+     height: 120px;
+     min-height: 120px;
+     max-height: 120px;
+     box-sizing: border-box;
+     border-radius: 5px;
+     border: 1px solid rgba(0, 0, 0, 0.19);
+
+ }
+
+
+ .btn-wts {
+     width: 100%;
+     background: #00a82d;
+     border: none;
+     padding: 5px;
+     color: white;
+     border-radius: 5px;
+
+ }
+
+
+
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    table {
+        width: 100%;
+    }
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border: 1px solid var(--lightGrey)
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid var(--lightGrey);
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        /* Label the data */
+        content: attr(data-column);
+
+        color: #000;
+        font-weight: bold;
+    }
+
+}
