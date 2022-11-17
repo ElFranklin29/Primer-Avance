@@ -12,6 +12,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/detail.css" />
+    <link rel="stylesheet" href="styles/fontello.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,23 +30,45 @@
 <body>
     <!-- main header -->
     <header class="main-header">
-        <div class="logo-box">
-            <a href="index.html"><img src="assets/logo.png" alt="" /></a>
+    
+        <!--MENU PARTE 1 -->
+        <div class="btn-menu">
+            <label for="btn-menu" class="icon-menu"></label>
         </div>
-        <nav class="main-menu">
-            <a href="index.html">Home</a>
-            <a class="span-tag" href="products.html">Shop<span>Hot</span></a>
-            <a href="contact.html">Contact</a></li>
-        </nav>
+        <!--MENU PARTE 1 END -->
+    
+    
+    
+        <div class="logo-box">
+            <img src=".img/BARRIGAS FELICES.png" alt="" />
+        </div>
         <div class="main-icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-user"></i>
             <div class="shopping-icon">
                 <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span class="cart-content">1</span></a>
             </div>
         </div>
+    
+    
     </header>
+    
+    <!-- MENU PARTE 2 -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <figure class="log-menu">
+                <img src=".img/BARRIGAS FELICES.png" alt="" />
+            </figure>
+            <nav>
+                <hr>
+    
+                <a href="index.html">Inicio</a>
+                <a href="#listado">Lista de productos</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <label for="btn-menu" class="icon-cancel"></label>
+        </div>
+    </div>
+    <!--MENU PARTE 2 END -->
     <!-- main-header end -->
 
     <!-- main -->
@@ -111,42 +134,12 @@
     <!-- main-footer -->
     <footer class="main-footer">
         <figure class="footer-logo">
-            <a href="index.html"><img src="assets/logo.png" alt="" /></a>
+            <a href="index.html"><img src=".img/BARRIGAS FELICES.png" alt="" /></a>
         </figure>
-
+    
         <div class="footer-widget">
             <div class="widget-title">
-                <h3>Category</h3>
-            </div>
-            <div class="widget-content">
-                <ul class="links-list">
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Shoe</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-widget">
-            <div class="widget-title">
-                <h3>Useful Link</h3>
-            </div>
-            <div class="widget-content">
-                <ul class="links-list">
-                    <li><a href="#">News & Tips</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Our Shop</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-widget">
-            <div class="widget-title">
-                <h3>Contact</h3>
+                <h3>Contactanos</h3>
             </div>
             <div class="widget-content">
                 <ul class="links-list">
@@ -155,7 +148,7 @@
                     <li><a href="mailto:info@example.com">info@example.com</a></li>
                 </ul>
             </div>
-
+    
             <ul class="footer-social">
                 <li>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -173,13 +166,6 @@
         </div>
     </footer>
     <div class="end-footer">
-        <div class="card-img">
-            <img src="assets/asset 29.png" alt="card-maestro">
-            <img src="assets/asset 30.png" alt="card-visa">
-            <img src="assets/asset 31.png" alt="card-american">
-            <img src="assets/asset 32.png" alt="card-disocverd">
-        </div>
-
         <span>Food © 2020 All Right Reserved</span>
     </div>
     <!-- main-footer end -->
